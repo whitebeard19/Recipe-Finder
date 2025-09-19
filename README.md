@@ -1,12 +1,50 @@
-# React + Vite
+# AI Chef 🍛
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered recipe generator that creates authentic South Indian (Tamil Nadu) recipes based on ingredients you have on hand.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Smart Ingredient Input**: Add ingredients one by one
+- **AI Recipe Generation**: Get authentic South Indian recipes using Mistral AI
+- **Clean UI**: Simple, responsive design
+- **Markdown Rendering**: Beautifully formatted recipe output
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React 19 + Vite
+- **Backend**: Vercel Serverless Functions
+- **AI**: OpenRouter API with Mistral models
+- **Styling**: Custom CSS with Inter font
+
+## Development
+
+1. **Clone and install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Set up environment variables:**
+   ```bash
+   cp .env.example .env
+   # Add your OpenRouter API key to .env
+   ```
+
+3. **Run development servers:**
+   ```bash
+   npm run dev:full
+   ```
+
+4. **Open http://localhost:5174**
+
+## Deployment
+
+This app is configured for Vercel deployment:
+
+1. Push to GitHub
+2. Import to Vercel
+3. Add `VITE_OPENROUTER_API_KEY` environment variable
+4. Deploy!
+
+## Environment Variables
+
+- `VITE_OPENROUTER_API_KEY`: Your OpenRouter API key for AI recipe generation
