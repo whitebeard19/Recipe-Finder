@@ -5,7 +5,7 @@ const openai = new OpenAI({
   baseURL: 'https://openrouter.ai/api/v1',
   defaultHeaders: {
     'HTTP-Referer': 'https://your-site-url.com',
-    'X-Title': 'Your App Name',
+    'X-Title': 'AI-CHEF',
   },
 
   dangerouslyAllowBrowser: true,
